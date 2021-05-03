@@ -1,0 +1,107 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin:0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* header */
+header,
+section{
+    overflow-x: hidden;
+}
+
+header a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+header{
+    background: #FFA500;
+}
+
+header .nav-item:last-child{
+    padding-right: 2em;
+}
+
+header .nav-item {
+    padding: 1em;
+}
+
+/* main section */
+
+.cover {
+    width: 100%;
+    height: 70vmin;
+    background: url("../assets/cloud.jpg");
+    background-position: -20rem -15rem;
+    background-size: 150%;
+    position: relative;
+}
+
+.cover .content{
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    padding-top: 25vmin;
+}
+
+.cover .content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 7vmin;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.text .rect {
+    position: relative;
+    z-index: 1;
+    /* background: white; */
+    width: 17rem;
+    height: 12rem;
+    padding-top: 8vmin;
+    margin: 1rem;
+}
+
+.text {
+    margin-top: -45vmin;
+}
+
+.text .rect h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.text .rect h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+/* Footer */
+footer {
+    background: #FFA500;
+    overflow-x: hidden;
+    padding: 1.9vmin 4vmin;
+}
+
+footer h6 {
+    font-family: 'Poppins', sans-serif;
+    color : whitesmoke;
+    margin-top: 2vmin;
+    font-weight: bold;
+}
+
+footer p{
+    font-family: 'Poppins', sans-serif;
+    color:whitesmoke;
+    margin-top: 1vmin;
+}
+
+  

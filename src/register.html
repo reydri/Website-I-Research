@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">iResearch</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section container-fluid p-0">
+            <div class="cover">
+                <div class="content text-left">
+                    <h2>Redefine The Online Survey</h2>
+                    <p>Achieve your survey in building the</p>
+                    <p>knowledge of industry</p>
+                    <div class="container">
+                        <div class="card">
+                            <div class="inner-box">
+                                <div class="card-register">
+                                    <h2 style="color: #FFA500; margin-left: 20px;">SIGN UP</h2>
+                                    <hr class="garis">
+                                    <form>
+                                        <input type="name" class="input-box" placeholder="Full Name" id="name" required>
+                                        <input type="email" class="input-box" placeholder="Email" id="email" required>
+                                        <input type="username" class="input-box" placeholder="Username" id="username" required>
+                                        <input type="password" class="input-box" placeholder="Password" id="password1" required>
+                                        <input type="password" class="input-box" placeholder="Retype Password" id="password2" required>
+                                        <input type="phone-number" class="input-box" placeholder="Phone Number" id="phone" required>
+                                        <input type="company" class="input-box" placeholder="Company" id="company" required>
+                                        <button type="submit" class="signup-btn" onclick="checkValidation()">
+                                            Sign Up
+                                        </button> 
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        function checkValidation(){
+            var name = document.getElementById("name");
+            var email = document.getElementById("email");
+            var user = document.getElementById("username");
+            var pass = document.getElementById("password1");
+            var repass = document.getElementById("password2");
+            var phone = document.getElementById("phone");
+            var com = document.getElementById("company");
+
+            if(name != "" && email != "" && user != "" && pass != "" && repass != "" && phone != "" && com != ""){
+                alert("Selamat, kamu telah terdaftar di website ini");
+                window.location.href = "login.html";
+            }
+        }
+    </script>
+</body>
+</html>

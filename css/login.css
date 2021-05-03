@@ -1,0 +1,181 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin:0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* header */
+header,
+section{
+    overflow-x: hidden;
+}
+
+header a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    color:whitesmoke;
+    font-weight: bold;
+}
+
+header{
+    background: #FFA500;
+}
+
+header .nav-item:last-child{
+    padding-right: 2em;
+}
+
+header .nav-item {
+    padding: 1em;
+}
+
+/* main section */
+
+.cover {
+    width: 100%;
+    height: 86vmin;
+    background: url("../assets/cloud.jpg");
+    background-position: -20rem -15rem;
+    background-size: 150%;
+    position: relative;
+}
+
+.cover .content{
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    padding-top: 30vmin;
+}
+
+.cover .content h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 5vmin;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-left: 3rem;
+}
+
+.text .rect {
+    position: relative;
+    z-index: 1;
+    width: 17rem;
+    height: 12rem;
+    padding-top: 8vmin;
+    margin: 0.5rem;
+}
+
+.text {
+    margin-top: -55vmin;
+}
+
+.text .rect p1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-right: 7rem;
+}
+
+.text .rect p2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-right: 7rem;
+}
+
+.container {
+    width: 100%;
+    height: 25%;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    margin-left: 25rem;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    box-shadow: 0 0 40px 20px rgba(0,0,0,5);
+}
+
+.inner-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.card-login{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/aestetic.png");
+    padding: 60px;
+    box-sizing: border-box;
+    backface-visibility: hidden;
+}
+
+.card-login h2{
+    font-weight: normal;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.garis{
+    margin-top: 10px;
+    width: 100%;
+    background-color: #FFA500;
+}
+
+.input-box{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 6px 0;
+    height: 32px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing:border-box;
+    outline: none;
+    text-align: center;
+    background-color: #fff;
+}
+
+::placeholder{
+    color: #2E393C;
+    font-size: 12px;
+}
+
+button{
+    width: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 10px 0 10px;
+    height: 32px;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+    background-color: #FFA500;
+    cursor: pointer;
+}
+
+button a{
+    color: whitesmoke;
+}
+
+.signin-btn:hover{background :black;color :white; }
+
+.goo:hover{background :#dd4b39;color:white;}
+
+.fb:hover{background :#3B5998;color :white;}
+
+.link:hover{background :rgb(56, 131, 134);color :white; }
