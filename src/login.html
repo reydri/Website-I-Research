@@ -60,7 +60,7 @@
                                         <input type="username" class="input-box" placeholder="Username" id="username" required>
                                         <input type="password" class="input-box" placeholder="Password" id="password" required>
                                         <h6 style="text-align: center; font-size: 12px; margin-top: 10px;" href='#'>forgot your password?</h6>
-                                        <button type="submit" class="signin-btn" onclick ="login()">Sign In</button> 
+                                        <button type="submit" class="signin-btn" onclick ="login(); return false;">Sign In</button> 
                                         <hr class="garis">
                                         <button class="goo" > <i class="fa fa-google"></i> Sign in with Google</button>
                                         <button class="fb" > <i class="fa fa-facebook"></i> Sign in with Facebook</button>
@@ -100,10 +100,14 @@
             var name = document.getElementById("username");
             var pass = document.getElementById("password");
 
-            if(name != null  && pass != null){
-                alert("Kamu berhasil login");
+            if(name.value == 'agus'  && pass.value == '12345'){
+                alert("Selamat, anda berhasil login");
                 window.location.href = "home.html";
             }
+            else{
+                alert("Maaf, username atau password anda salah")
+                window.location.href = "login.html"
+            } 
         }
     </script>
 
