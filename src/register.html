@@ -44,8 +44,8 @@
                                         <input type="password" class="input-box" placeholder="Retype Password" id="password2" required>
                                         <input type="phone-number" class="input-box" placeholder="Phone Number" id="phone" required>
                                         <input type="company" class="input-box" placeholder="Company" id="company" required>
-                                        <button type="submit" class="signup-btn" onclick="checkValidation()">
-                                            Sign Up
+                                        <button type="submit" class="signup-btn" onclick="register()">
+                                           Sign Up
                                         </button> 
                                     </form>
                                 </div>
@@ -62,7 +62,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript">
-        function checkValidation(){
+        function register(){
             var name = document.getElementById("name");
             var email = document.getElementById("email");
             var user = document.getElementById("username");
@@ -71,7 +71,7 @@
             var phone = document.getElementById("phone");
             var com = document.getElementById("company");
 
-            if(name != "" && email != "" && user != "" && pass != "" && repass != "" && phone != "" && com != ""){
+            if(name != null && email != null && user != null && pass != null && repass != null && phone != null && com != null){
                 alert("Selamat, kamu telah terdaftar di website ini");
                 window.location.href = "login.html";
             }

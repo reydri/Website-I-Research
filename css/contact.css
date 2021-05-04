@@ -47,7 +47,7 @@ header .nav-item {
     background: rgba(0,0,0,0.5);
     height: 100%;
     width: 100%;
-    padding-top: 5vmin;
+    padding-top: 15vmin;
 }
 
 .cover .content h2{
@@ -55,21 +55,30 @@ header .nav-item {
     font-size: 5vmin;
     color: whitesmoke;
     font-weight: bold;
-    margin-left: 3rem;
+    margin-left: 5rem;
 }
 
-.cover .content h4{
-    font-family: 'Poppins', sans-serif;
-    font-size: 3vmin;
-    color: whitesmoke;
-    font-weight: bold;
-    margin-left: 3rem;
+.text .rect {
+    position: relative;
+    z-index: 1;
+    width: 30rem;
+    height: 20rem;
+    margin: 1rem;
 }
 
-.cover .content p{
+.text {
+    margin-top: -65vmin;
+}
+
+.text .rect h4{
     font-family: 'Poppins', sans-serif;
-    font-size: 2vmin;
+    font-size: 2rem;
     color: whitesmoke;
     font-weight: bold;
-    margin-left: 3rem;
+}
+
+.text .rect p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: whitesmoke;
 }
