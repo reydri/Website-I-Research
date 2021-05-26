@@ -115,7 +115,7 @@ footer p{
         font-size: 5vmin;
     }
     .text .rect {
-        width:12rem;
+        width:6rem;
         height: 8rem;
     }
 
@@ -130,7 +130,7 @@ footer p{
 
 @media only screen and (max-width: 425px){
     .text .rect {
-        width:6rem;
+        width:4rem;
         height: 8rem;
     }
     footer .row .col-md-4{
@@ -140,7 +140,7 @@ footer p{
 
 @media only screen and (max-width: 375px){
     .text .rect {
-        width:5rem;
+        width:3rem;
         height: 8rem;
     }
     footer .row .col-md-4{
@@ -150,7 +150,7 @@ footer p{
 
 @media only screen and (max-width: 320px){
     .text .rect {
-        width:4rem;
+        width:2.5rem;
         height: 6rem;
     }
 } 
