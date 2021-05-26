@@ -104,4 +104,53 @@ footer p{
     margin-top: 1vmin;
 }
 
-  
+@media only screen and (max-width: 768px){
+    header .navbar-brand{
+        padding-left: 1rem;
+    }
+    .cover{
+        background-position: -25vmin -10vmin;
+    }
+    .cover .content h1 {
+        font-size: 5vmin;
+    }
+    .text .rect {
+        width:12rem;
+        height: 8rem;
+    }
+
+    .text .rect h2{
+        font-size: 4vmin;
+    }
+    
+    .text .rect h4{
+        font-size: 4vmin;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .text .rect {
+        width:6rem;
+        height: 8rem;
+    }
+    footer .row .col-md-4{
+        margin-top: 0.8vmin;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .text .rect {
+        width:5rem;
+        height: 8rem;
+    }
+    footer .row .col-md-4{
+        margin-top: 2.3vmin;
+    }
+} 
+
+@media only screen and (max-width: 320px){
+    .text .rect {
+        width:4rem;
+        height: 6rem;
+    }
+} 

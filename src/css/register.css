@@ -143,3 +143,56 @@ button a{
 }
 
 .signup-btn:hover{background :black;color :white; }
+
+@media only screen and (max-width: 768px){
+    header .navbar-brand{
+        padding-left: 1rem;
+    }
+    .cover{
+        background-position: -25rem -5rem;
+    }
+    .cover .content h2 {
+        font-size: 3vmin;
+    }
+    .cover .content p {
+        font-size: 2vmin;
+    }
+    .container {
+        width: 100%;
+        height: 25%;
+        margin-top: 60px;
+        margin-left: 150px;
+    }   
+}
+
+@media only screen and (max-width: 425px){
+    .cover{
+        background-position: -5rem 20rem;
+        height: 130vmin;
+    }
+    .container {
+        width: 100%;
+        height:20%;
+        margin-top: 110px;
+        margin-left:10px;
+    }   
+}
+
+@media only screen and (max-width:375px){
+    .cover{
+        height: 147vmin;
+    }
+    .container {
+        margin-top: 120px;
+        margin-left:5px;
+    }   
+}
+
+@media only screen and (max-width:320px){
+    .cover{
+        height: 170vmin;
+    }
+    .container {
+        margin-top: 125px;
+    }
+}

@@ -82,3 +82,72 @@ header .nav-item {
     font-size: 1rem;
     color: whitesmoke;
 }
+
+@media only screen and (max-width: 768px){
+    header .navbar-brand{
+        padding-left: 1rem;
+    }
+    .cover{
+        background-position: -20vmin -10vmin;
+        height: 90.5vmin;
+    }
+    .cover .content h2 {
+        font-size: 4vmin;
+    }
+    .text {
+        margin-top: -70vmin;
+    }
+    .text .rect {
+        width:21rem;
+        height: 10rem;
+    }
+    .text .rect h4{
+        font-size: 3vmin;
+    }
+    .text .rect p{
+        font-size: 2.5vmin;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .cover{
+        background-position:-25vmin -20vmin;
+        height: 129.5vmin;
+    }
+    .cover .content h2 {
+        font-size: 3vmin;
+        margin-right: 75px;
+    }
+    .text {
+        margin-top: -112vmin;
+    }
+    .text .rect {
+        width:15rem;
+        height: 10rem;
+    }
+    .text .rect h4{
+        font-size: 3vmin;
+    }
+    .text .rect p{
+        font-size: 2.5vmin;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .cover{
+        background-position:-25vmin -10vmin;
+        height: 147vmin;
+    }
+    .text {
+        margin-top: -125vmin;
+    }
+}
+@media only screen and (max-width: 320px){
+    .cover{
+        background-position:-25vmin -10vmin;
+        height: 550px;
+    }
+    .text {
+        margin-top: -155vmin;
+    }
+}

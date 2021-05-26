@@ -85,3 +85,62 @@ header .nav-item {
     color: whitesmoke;
     margin-right: 7rem;
 }
+
+@media only screen and (max-width: 768px){
+    header .navbar-brand{
+        padding-left: 1rem;
+    }
+    .cover{
+        background-position: -25rem -5rem;
+        height: 100vmin;
+    }
+    .cover .content h2{
+        font-size: 4vmin;
+    }
+    .text .rect{
+        width: 10rem;
+        height: 8rem;
+        margin-top: -80px;
+        margin-left: 30px;    
+    }
+    .text .rect p1{
+        font-size: 3.5vmin;
+    }
+    .text .rect p2{
+        font-size: 3vmin;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .cover{
+        background-position: -5rem 20rem;
+        height: 130vmin;
+    }
+    .text .rect{
+        width: 4rem;
+        height: 8rem;
+        margin-top:-180px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .cover{
+        height:145vmin;
+    }
+    .text .rect{
+        width: 3rem;
+        height: 8rem;
+        margin-top:-200px;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .cover{
+        height: 170vmin;
+    }
+    .text .rect{
+        width: 2rem;
+        height: 8rem;
+        margin-top: -275px;
+    }
+}
