@@ -16,67 +16,82 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="index.html">IResearch</a>
-            <div class="mr-auto"></div>
-            <ul class="navbar-nav px-3">
-                <li class="nav-item text-nowrap">
-                        <a class="nav-link" href="home.html"><i style="margin-right: 5px;" class="fa fa-user" aria-hidden= "true" ></i>Agus Susanto</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2 bg-light d-none d-md-block sidebar">
-                <div class="left-sidebar">
-                    <ul class="nav flex-column sidebar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="survey.html">
-                                <svg class="bi bi-chevron-right" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/></svg>
-                                Surveys
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="dashboard.html">
-                                <svg class="bi bi-chevron-right" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/></svg>
-                                Dashboard
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="database.html">
-                                <svg class="bi bi-chevron-right" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/></svg>
-                                Database
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="user.html">
-                                <svg class="bi bi-chevron-right" width="16" height="16" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6.646 3.646a.5.5 0 01.708 0l6 6a.5.5 0 010 .708l-6 6a.5.5 0 01-.708-.708L12.293 10 6.646 4.354a.5.5 0 010-.708z" clip-rule="evenodd"/></svg>
-                                User
-                            </a>
+        <div class="container-fluid p-0">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="home.html">iResearch</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-align-right text-dark"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mr-auto"></div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <div class="dropdown">
+                                <a class="nav-link" href="#"><i style="margin-right: 10px;"  class="fa fa-user" aria-hidden= "true" ></i>Agus Susanto</a>
+                                <div class="dropdown-content">
+                                    <a href="survey.html">Surveys</a>
+                                    <a href="dashboard.html">Dashboard</a>
+                                    <a href="database.html">Database</a>
+                                    <a href="user.html">User</a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
-            </div>
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-                <h3 style="font-weight: bold;">Dashboard</h3>
-                <input type="text" class="form-control form-control-primary w-10" placeholder="Search..." >
-                <hr>
-                <h4 style="text-align: center; font-weight: bold;">Penggunaan Media Sosial</h4>
-                <div class="container-fluid text-center">
-                    <div class="text d-flex flex-md-row flex-wrap justify-content-center">
-                        <div class="rect">
-                            <img src="../assets/bar2.PNG" alt="Bar Survey">
-                        </div>
-                        <div class="rect">
-                            <img src="../assets/bar3.PNG" alt="Bar Survey">
-                        </div>
+            </nav>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 bg-light d-none d-md-block sidebar">
+                    <div class="left-sidebar">
+                        <ul class="nav flex-column sidebar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="survey.html">
+                                    <i class="fa fa-table" aria-hidden="true"></i>
+                                    Surveys
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="dashboard.html">
+                                    <i class="fa fa-bar-chart" aria-hidden="true"></i>
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="database.html">
+                                    <i class="fa fa-database" aria-hidden="true"></i>
+                                    Database
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="user.html">
+                                    <i class="fa fa-user" aria-hidden= "true"></i>
+                                    User
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </main>
+                <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4">
+                    <h3 style="font-weight: bold;">Dashboard</h3>
+                    <input type="text" class="form-control form-control-primary w-10" placeholder="Search..." >
+                    <hr>
+                    <h4 style="text-align: center; font-weight: bold;">Penggunaan Media Sosial</h4>
+                    <div class="container-fluid text-center">
+                        <div class="text d-flex flex-md-row flex-wrap justify-content-center">
+                            <div class="rect">
+                                <img src="../assets/bar2.PNG" alt="Bar Survey">
+                            </div>
+                            <div class="rect">
+                                <img src="../assets/bar3.PNG" alt="Bar Survey">
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
         </div>
-    </div>
+    </header>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

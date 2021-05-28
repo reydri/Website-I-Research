@@ -24,6 +24,29 @@ header{
     background: #FFA500;
 }
 
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: black;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background: #FFA500;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
 header .nav-item:last-child{
     padding-right: 2em;
 }

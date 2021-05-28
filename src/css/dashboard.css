@@ -7,17 +7,53 @@
     max-width: 100%;
 }
 
+/* header */
 header,
 section{
     overflow-x: hidden;
 }
 
-header{
-    background : #FFA500;
+header a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    color:#FFA500;
+    font-weight: bold;
 }
 
-header a{
-    color : whitesmoke;
+header{
+    background: whitesmoke;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background: black;
+    min-width: 160px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.dropdown-content a{
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background: #FFA500;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+header .nav-item:last-child{
+    padding-right: 2em;
+}
+
+header .nav-item {
+    padding: 1em;
 }
 
 .form-control-primary {
@@ -27,22 +63,22 @@ header a{
 }
 
 .sidebar {
-    position: relative;
-    z-index: 1;
-    border: 1px solid #d3d3d3;
+    position: absolute;
+    z-index: 100;
+    border-right: 1px solid #d3d3d3;
 }
 
 .left-sidebar {
-    position: static;
-    height: calc(100vh - 76px);
+    position: sticky;
+    height: 35.5rem;
 }
   
 .sidebar-nav li .nav-link {
-    color: black
+    color: black;
 }
 
 main {
-    padding-top: 30px;
+    padding-top: 68px;
 }
 
 .text .rect {
@@ -59,4 +95,27 @@ img {
     height: 200px;
 }
 
+@media only screen and (max-width: 768px){
+    header .navbar-brand{
+        padding-left: 1rem;
+    }
+    .col-md-2 {
+        visibility: hidden;
+    }
+    .dropdown-content{
+        visibility: unset;
+    }
+}
 
+@media only screen and (max-width: 425px){
+    .dropdown-content a{
+        padding: 10px;
+    }
+    .text .rect{
+        width: 20rem;
+        height: 15rem;
+    }
+    h4{
+        font-size: 5vmin;
+    }
+}
