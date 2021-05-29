@@ -162,10 +162,10 @@ header .nav-item {
 @media only screen and (max-width: 320px){
     .cover{
         background-position:-5rem 20rem;
-        height: 200vmin;
+        height: 205vmin;
     }
     .cover .team {
-        margin-top: -185vmin;
+        margin-top: -190vmin;
     }
     .cover .card{
         margin-left: 80px;
@@ -174,3 +174,4 @@ header .nav-item {
         font-size: 3.5vmin;
     } 
 }
+
