@@ -72,9 +72,15 @@
             var com = document.getElementById("company");        
 
             if(name.value != '' && email.value != '' && user.value != '' && pass.value != '' && repass.value != '' && phone.value != '' && com.value != ''){
-                alert("Selamat, kamu telah terdaftar di website ini") 
-                window.location.href = "login.html"; 
-            }
+                if(pass.value == repass.value ){
+                    alert("Selamat, kamu telah terdaftar di website ini") 
+                    window.location.href = "login.html"
+                }
+                else{
+                    alert("Maaf, konfirmasi password anda tidak valid")
+                    window.location.href = "register.html"
+                }
+            }  
             else{
                 alert("Maaf, data anda masih kosong")
                 window.location.href = "register.html"
