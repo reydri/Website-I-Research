@@ -65,7 +65,7 @@ header .nav-item {
 .cover .card{
     width:15rem;
     height:8rem;
-    margin-left: 300px; 
+    margin-left: 525px; 
 }
 
 .cover .card .card-name{
@@ -98,7 +98,7 @@ header .nav-item {
         margin-top:-80vmin;
     }
     .cover .card{
-        margin-left: 100px; 
+        margin-left: 240px; 
     }
     .cover .content-2 h2{
         font-size: 4vmin;
@@ -113,6 +113,7 @@ header .nav-item {
     .cover .content h2{
         margin-top: -20px;
         margin-left: 60px;
+        font-size: 5vmin;
     }
     .cover .team {
         margin-top: -150vmin;
@@ -130,7 +131,7 @@ header .nav-item {
         color: black;
     }
     .cover .content-2 h2{
-        margin-top:20px;
+        margin-top:75px;
         margin-left: 60px;
     }
     .cover .content-2 p{
@@ -175,4 +176,3 @@ header .nav-item {
         font-size: 3.5vmin;
     } 
 }
-
